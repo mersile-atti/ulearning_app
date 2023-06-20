@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1028722753630",
+    "project_id": "ulearning-app-67977",
+    "storage_bucket": "ulearning-app-67977.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028722753630:android:5fe7074588909a125334cf",
+        "android_client_info": {
+          "package_name": "com.mersileatti.ulearning_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028722753630-kssrr148g2lrpvrk4gp9f3s46dhbm9bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRQ14mBbv15tWKoCq20NFTwQvvp5X50hU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028722753630-kssrr148g2lrpvrk4gp9f3s46dhbm9bf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1028722753630-65t4g54vimob3v4u7pt0pidlu7gnt8sc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mersileatti.ulearningApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
