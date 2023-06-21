@@ -34,7 +34,7 @@ class _RegisterState extends State<Register> {
                   ),
                   Center(child: reusableText("Enter your information below & free sign up")),
                   Container(
-                    margin: EdgeInsets.only(top: 36.h),
+                    margin: EdgeInsets.only(top: 60.h),
                     padding: EdgeInsets.only(left: 25.w, right: 25.w),
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -68,7 +68,7 @@ class _RegisterState extends State<Register> {
                   ),
                   Container(
                       margin: EdgeInsets.only(left: 25.w),
-                      child: reusableText("By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy.")),
+                      child: reusableText("By creating an account, you agree to our Terms, Data Policy and Cookie Policy.")),
                   buildLoginAndRegButton("Sign Up", "login", () {
                     //Navigator.of(context).pushNamed("register");
                     RegisterController(context: context).handleEmailRegister();

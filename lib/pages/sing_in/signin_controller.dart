@@ -1,8 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:ulearning_app/common/values/constants.dart';
 import 'package:ulearning_app/common/widgets/flutter_toast.dart';
 import 'package:ulearning_app/pages/sing_in/bloc/signin_blocs.dart';
+
+import '../../global.dart';
 
 class SignInController {
   final BuildContext context;
@@ -29,14 +32,16 @@ class SignInController {
               email: emailAdress, password: password);
            if(credential.user == null) {
               toastInfo(message: "you don't have account");
+              return;
            }
            if(!credential.user!.emailVerified) {
               toastInfo(message: "you need to verify your email");
+              return;
            }
             var user = credential.user;
            if(user != null) {
              //we get user verified from firebase
-             toastInfo(message: "you are logged in");
+             Global.storageService.setString(AppConstants.STORAGE_USER_TOKEN_KEY, "Solari1016");
              Navigator.of(context).pushNamedAndRemoveUntil("/application", (route) => false);
            } else {
              // error getting user from firebase

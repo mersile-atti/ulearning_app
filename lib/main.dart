@@ -5,12 +5,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'common/routes/routes.dart';
 import 'common/values/colors.dart';
+import 'global.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    );
 
+  await Global.init();
   runApp(const MyApp());
 }
 
@@ -24,6 +23,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
         providers: [...AppPages.allBlocProviders(context)],
         child: ScreenUtilInit(
+          designSize: const Size(375, 812),
             builder: (context, child) => MaterialApp(
              debugShowCheckedModeBanner: false,
               theme: ThemeData(
